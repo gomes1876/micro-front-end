@@ -1,0 +1,24 @@
+{
+  "name": "micro-front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "start-all": "npm-run-all --parallel start-*",
+  "start-folder-1": "cd app-01 && npm start",
+  "start-folder-2": "cd app-02 && npm start",
+  "start-folder-3": "cd app-03 && npm start",
+  "start-folder-4": "cd root && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gomes1876/micro-front-end.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gomes1876/micro-front-end/issues"
+  },
+  "homepage": "https://github.com/gomes1876/micro-front-end#readme"
+}

@@ -21,6 +21,16 @@ export default function () {
         getLocalStorage()
     }, [])
 
+    function updateStoreShared(){
+        const data = new Date();
+        const info = data.getTime()
+        console.log(`salvo pelo app-03 ${info}`);
+
+        localStorage.setItem("root-store", `salvo pelo app-03 ${info}`);
+
+        getLocalStorage()
+    }
+
     return (
         <>
             <h3>
@@ -29,6 +39,7 @@ export default function () {
             <p>{valApp01}</p>
             <p>{valApp02}</p>
             <p>{valShared}</p>
+            <button onClick={updateStoreShared}>update store compartilhada</button>
         </>
     )
 
