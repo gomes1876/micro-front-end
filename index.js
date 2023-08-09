@@ -4,7 +4,8 @@ const comandos = [
   'cd ./root && npm start', 
   'cd ./app-01 && npm start', 
   'cd ./app-02 && npm start',
-  'cd ./app-03 && npm start'
+  'cd ./app-03 && npm start',
+  'cd ./app-store && npm start'
 ];
 
 const promessas = comandos.map(comando => {
